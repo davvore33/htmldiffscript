@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <!-- TODO: modificare qui sotto il titolo del proprio corso -->
+    <title>Basi di Dati</title>
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+    <link rel="stylesheet" href="StyleSheet_reweblike.css" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function presentation(p) { //v3.0
+	 var link = '/pub/flash/'+p+'/index.html';
+   open(link,'Presentation','width=720,height=576,location=no');
+   return link;
+}
+//-->
+</script>
+
+</head>
+
+<body>
+    
+    <div class='box_pagina'>
+    
+        <div class='box_titolo'>
+            <div class='logo_sx'>
+            </div>
+            <div class='logo_dx'>
+            </div>
+        </div>
+        <div class='box_menu'>
+            <div class='menu_bar'>
+                <ul>
+                
+                
+                <li><a href="http://www.fim.unimore.it/l/inf" target=_blank title="Laurea Triennale in Informatica">Laurea Triennale in Informatica</a></li>
+                <li> <a href="http://www.fim.unimore.it/" target=_blank  title="Pagina principale del Dipartimento">Dipartimento</a> </li>
+                <li><a href="http://www.unimore.it/" target=_blank  title="Homepage dell'Ateneo">Ateneo</a></li>
+                <li><a href="http://www.esse3.unimore.it/" target=_blank  title="Esse3">Esse3</a></li>
+                <li><a href="http://webmail.unimore.it" target=_blank  title="Posta elettronica">Webmail</a></li>
+                <li><a href="http://posta.unimore.it" target=_blank  title="Portale del serivizio di posta elettronica dell'Ateneo" >Rubrica</a></li>
+                </ul>
+            </div>
+        </div>
+        
+		
+        
+        <div class='box_menu_pagina'>
+            <div class='menu_pagina'>
+                <ul>
+				<!--        TODO:   Menu della pagina;  mettere qui le voci delle  sezioni usate e i relativi link          -->
+        <li> <a href="#infogen" title="Informazioni">Informazioni Generali</a> </li>
+        <li> <a href="#obiettivi" title="Obiettivi Formativi">Obiettivi formativi</a> </li>
+        <li> <a href="#programma" title="Programma">Programma</a> </li>
+				<li> <a href="#orario" title="Orario">Orario</a> </li>
+				<li> <a href="#avvisi" title="Avvisi e Notizie">Avvisi</a> </li>	
+				<li> <a href="#materiale" title="Materiale Didattico">Materiale didattico</a> </li>
+        <li> <a href="#esami" title="Esami">Esami</a> </li>
+        <li> <a href="#tesi" title="Tesi di Laurea e Tirocini Aziendali">Tesi e Tirocini</a> </li>
+				<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+                </ul>
+           </div>
+        </div>
+        <!--        -->
+     
+     
+     
+       
+        <div class='box_contenuto1'>
+        <div class='box_interno'>
+		
+		
+		
+		<!--- PARTE DA MODIFICARE A PIACERE USANDO I NORMALI TAG HTML -->
+            <center>
+            <h1>Basi di Dati</h1>
+            </center>
+            
+            
+            
+            <a name="infogen">
+            <h2> Informazioni generali sull'insegnamento</h2>
+            </a>
+            
+            <table>
+			<tr><th>Nome dell'insegnamento:</th><td>Basi di Dati [MN1-525]</td></tr>
+            <tr><th>Docente:</th><td>Riccardo Martoglia</td></tr>
+            <tr><th>Corso di Studio:</th><td>Informatica [16-209]</td></tr>
+			<tr><th>Tipologia:</th><td>Caratterizzante</td></tr>
+			<tr><th>SSD:</th><td>ING-INF/05</td></tr>
+            <tr><th>CFU:</th><td>9</td></tr>
+            <tr><th>Periodo Didattico:</th><td>Secondo Anno, Secondo Semestre</td></tr>
+            <tr><th>Presentazione e Modalità di Esame:</th><td><a href="presentazione.pdf" target="_blank">Ulteriori informazioni (PDF)</a></li>
+            </table>
+            
+            <a name="obiettivi">
+            <h2> Obiettivi formativi</h2>
+            </a>      
+            <p>L'insegnamento di Basi di Dati si propone di introdurre gli studenti agli argomenti fondamentali nel campo delle basi di dati, i modelli, le strutture, la progettazione e l'interrogazione dei dati.
+            <br>Le tecniche sono mostrate sia dal punto di vista teorico che pratico, tramite un'ampia serie di attività di laboratorio e progettuali. </p>
+            
+            <a name="programma">
+            <h2> Programma dell'insegnamento</h2>
+            </a>
+			<ul>
+			<li>Introduzione ai sistemi informativi aziendali, la funzione della base di dati.</li>
+      <li>Come modellare i dati aziendali, il modello entità  relazione. Gli schemi, le proprietà  e le associazioni, le gerarchie concettuali. La progettazione concettuale della base di dati.</li>
+      <li>Il modello logico relazionale, le chiavi primarie, la normalizzazione. Gli operatori relazionali, i vincoli di integrità . Conversione di schemi concettuali in schemi relazionali.</li>
+      <li>Il linguaggio SQL, la definizione dei dati, l'interrogazione e la modifica.</li>
+      <li>Le strutture di accesso, le funzioni hash e gli alberi B+. Architetture dei Data Base Managemnt Systems, l'ottimizzazione delle interrogazioni, le transazioni e la concorrenza degli accessi alla base di dati.</li>
+      <li>Cenni di programmazione database dinamica.</li>
+		</ul>
+
+            <a name="orario">
+            <h2> Orario delle lezioni</h2>
+            </a>
+            <ul>
+            <li>Lun  11.00 - 13.00 (Aula V, Dip. Matematica)</li>
+            <li>Mar 11.00 - 13.00 (Aula V, Dip. Matematica)</li>
+            <li>Mer  14.00 - 17.00 (Lab. Base, Dip. Matematica)</li>
+            </ul>
+            
+            
+            <a name="avvisi">
+            <h2>Avvisi (in ordine cronologico inverso)</h2>
+            </a>
+            
+            <ul>
+	            <li> <div class='DataETitolonotizia'>29/01/2015 - Risultati prova scritta e progetti</div> 
+	            Pubblicati i risultati della prova scritta del 22/01/2015 e dei progetti consegnati al 22/01/2015.
+	            </li>
+	
+		        <li> <div class='DataETitolonotizia'>17/12/2014 - Date appelli invernali</div> 
+		        Pubblicate le date di esame per gennaio / febbraio.
+		        </li>
+		
+				<li> <div class='DataETitolonotizia'>15/09/2014 - Risultati prova scritta e progetti</div> 
+	            Pubblicati i risultati e la soluzione della prova scritta del 9/09/2014.
+	            </li>
+	
+				<li> <div class='DataETitolonotizia'>29/07/2014 - Risultati prova scritta e progetti</div> 
+	            Pubblicati i risultati e la soluzione della prova scritta del 24/07/2014.
+	            </li>
+	
+				<li> <div class='DataETitolonotizia'>16/07/2014 - Risultati prova scritta</div> 
+	            Pubblicati i risultati e la soluzione della prova scritta del 10/07/2014.
+	            </li>
+	
+	            <li> <div class='DataETitolonotizia'>23/06/2014 - Risultati prova scritta</div> 
+	            Pubblicati i risultati e la soluzione della prova scritta del 19/06/2014.
+	            </li>
+	
+	            <li> <div class='DataETitolonotizia'>20/05/2014 - Date appelli estivi</div> 
+	    	        Pubblicate le date degli appelli estivi.
+	    	    </li>
+	
+				<li> <div class='DataETitolonotizia'>9/05/2014 - Seminario</div> 
+	                Il giorno <b>** 27 maggio alle ore 14 in aula X (M2.5) a Matematica **</b>,
+	                nell'ambito del corso Gestione Avanzata dell'Informazione, il Dott. Marcello Pellacani,
+	                direttore della divisione Knowledge Management di Expert System S.p.A., terrà un seminario
+	                dal titolo "Prendiamo un espresso in UNIMORE". Si invitano tutti gli interessati a partecipare.
+	                Si veda il <a target="_blank" href="www.isgroup.unimo.it/corsi/gavi">sito del corso</a> per maggiori informazioni.
+	            </li>
+					<li> <div class='DataETitolonotizia'>6/05/2014 - Scritto intermedio</div> 
+	                Pubblicati i risultati e la soluzione dello scritto intermedio.
+	            </li>
+	
+				<li> <div class='DataETitolonotizia'>20/4/2014 - Prova in itinere</div> 
+	            La prova in itinere di basi di dati si terrà mercoledì 30 aprile alle ore 14:30 in aula II (Matematica).
+	            </li>
+	
+				<li> <div class='DataETitolonotizia'>14/4/2014 - Lezione del 16 aprile</div> 
+	            Si avvisa che mercoledì 16 aprile la lezione di laboratorio inizierà alle 14:00 in punto e terminerà alle 16:30.
+	            </li>
+	
+				<li> <div class='DataETitolonotizia'>24/3/2014 - Lezione del 26 marzo</div> 
+	            Si avvisa che mercoledì 26 marzo non si terrà la lezione di basi di dati.
+	            </li>
+	
+				<li> <div class='DataETitolonotizia'>3/3/2014 - Lezioni del mercoledì</div> 
+	            Le lezioni del mercoledì propedeutiche al laboratorio inizieranno il 12 marzo in Aula IV e proseguiranno il 19 marzo in Aula II.
+	            </li>
+	
+				<!--<li> <div class='DataETitolonotizia'>19/02/2014 - Risultati prova scritta e progetti</div> 
+	            Pubblicati i risultati della prova scritta del 13/02/2014 e dei progetti consegnati al 13/02/2014.
+	            </li>
+	
+	            <li> <div class='DataETitolonotizia'>29/01/2014 - Risultati prova scritta e progetti</div> 
+	            Pubblicati i risultati della prova scritta del 23/01/2014 e dei progetti consegnati al 23/01/2014.
+	            </li>	
+	
+				<li> <div class='DataETitolonotizia'>12/09/2013 - Risultati correzione progetti</div> 
+	            Pubblicati i risultati della correzione dei progetti al 10/09/2013.
+	            </li>	
+	
+				<li> <div class='DataETitolonotizia'>29/07/2013 - Risultati prova scritta e progetti</div> 
+	            Pubblicati i risultati e la soluzione della prova scritta del 25/07/2013.
+	            </li>
+	
+	            <li> <div class='DataETitolonotizia'>25/06/2013 - Risultati prova scritta</div> 
+	            Pubblicati i risultati e la soluzione della prova scritta del 20/06/2013.
+	            </li>
+	
+	            <li> <div class='DataETitolonotizia'>20/05/2013 - Date appelli estivi</div> 
+	    	        Pubblicate le date degli appelli estivi.
+	    	    </li>
+				
+				<li> <div class='DataETitolonotizia'>13/05/2013 - Scritto intermedio</div> 
+	                Pubblicati i risultati e la soluzione dello scritto intermedio.
+	            </li>
+	            
+	            <li> <div class='DataETitolonotizia'>23/04/2013 - Progetto</div> 
+	                Pubblicato il testo del progetto 2012/2013.
+	            </li>
+	
+			    <li> <div class='DataETitolonotizia'>10/09/2012 - Risultati prova scritta e progetti</div> 
+	            Pubblicati i risultati dello scritto del 6/09/2012 e dei progetti consegnati entro il 3 settembre.
+	            </li>-->
+            </ul>
+            
+            <a name="materiale">
+          <h2>Materiale didattico</h2>    
+          </a> 
+          <h3>Libro di testo adottato:</h3>
+			Beneventano, Bergamaschi, Guerra, Vincini: Progetto di Basi di Dati Relazionali, Pitagora.	
+			
+          <h3>Libri di testo consigliati:</h3>
+			Ciaccia, Maio: Lezioni di Basi di Dati, Progetto Leonardo.<br>
+			Albano, Ghelli, Orsini: Basi di Dati Relazionali e a oggetti, Zanichelli.<br>
+			Albano: Costruire sistemi per Basi di Dati, Addison Wesley.<br>
+			Grandi F: "Esercizi di Basi di Dati", Progetto Leonardo<br>
+								
+			<h3>Lucidi A.A. 2013/14</h3>
+			
+<ul>
+<li><b>A - Introduzione</b></li>
+	<ul>
+	<li><a href="lucidi/A0-Presentazione.pdf">A0 - Introduzione: Presentazione dell'insegnamento</a></li>
+	<li><a href="lucidi/A1-Introduzione.pdf">A1 - Introduzione: Introduzione ai sistemi informativi</a></li>
+	<li><a href="lucidi/A2-tecnologia.pdf">A2 - Introduzione: Tecnologia dei sistemi informativi</a></li>
+  </ul>
+<li><b>B - Progetto ER</b></td></tr></li>
+	<ul>
+	<li><a href="lucidi/B1-introduzione-er.pdf">B1 - La progettazione della base di dati</a></li>
+	<li><a href="lucidi/B2-ER.pdf">B2 - Il modello entità  relazione</a></li>
+	<li><a href="lucidi/B3-proprietà.pdf">B3 - La definizione delle proprietà</a></li>
+	<li><a href="lucidi/B4-associa1.pdf">B4 - Le associazioni (parte 1)</a></li>
+	<li><a href="lucidi/B5-associa2.pdf">B5 - Le associazioni (parte 2)</a></li>
+	<li><a href="lucidi/B6-identifica.pdf">B6 - Identificazione esterna</a></li>
+	<li><a href="lucidi/B7-isa.pdf">B7 - Generalizzazione e specializzazione</a></li>
+  </ul>
+<li><b>C - Modello Relazionale e Linguaggio SQL</b></li>
+	<ul>
+	<li><a href="lucidi/C1-modRelaz.pdf">C1 - Il modello relazionale dei dati</a></li>
+	<li><a href="lucidi/C2-lingInterrog.pdf">C2 - Linguaggi di interrogazione</a></li>
+	<li><a href="lucidi/C2es-esAlgebra.pdf">C2es - Esercizi di algebra relazionale</a></li>
+	<li><a href="lucidi/C3-ddl1.pdf">C3 - Dichiarazione degli schemi in SQL</a></li>
+	<li><a href="lucidi/C3es.pdf">C3es - Esercizi sulla dichiarazione degli schemi in SQL</a></li>
+	<li><a href="lucidi/C4-sql1.pdf">C4 - Interrogazioni in SQL</a></li>
+	<li><a href="lucidi/C4es.pdf">C4es - Esercizi sulle interrogazioni in SQL</a></li>
+	<li><a href="lucidi/C5-sql2.pdf">C5 - Interrogazioni complesse (I parte)</a></li>
+	<li><a href="lucidi/C5es.pdf">C5es - Esercizi sulle interrogazioni complesse (I parte)</a></li>
+	<li><a href="lucidi/C6-sql3.pdf">C6 - Interrogazioni complesse (II parte)</a></li>
+	<li><a href="lucidi/C6es.pdf">C6es - Esercizi sulle interrogazioni complesse (II parte)</a></li>
+	<li><a href="lucidi/C7-ddl2.pdf">C7 - Aspetti avanzati nella definizione degli schemi</a></li>
+    <!--<li><a href="lucidi/Ces.pdf">Ces - Esercizi di interrogazione di riepilogo</a></li>-->
+  </ul>
+<li><b>D - Progetto Logico e Normalizzazione</b></li>
+	<ul>
+	<li><a href="lucidi/D1-plogico.pdf">D1 - Progetto logico (parte 1)</a></li>
+	<li><a href="lucidi/D2-plogico2.pdf">D2 - Progetto logico (parte 2)</a></li>
+	<li><a href="lucidi/D3-normali.pdf">D3 - La normalizzazione delle relazioni</a></li>
+	<li><a href="lucidi/D4-dderivati.pdf">D4 - Dati derivati</a></li>
+	</ul>
+<li><b><font>E - Tecnologia DBMS e Metodi di Accesso</font></b></li>
+	<ul>
+	<li><a href="lucidi/E1-memorie.pdf">E1 - Memorie permanenti</a></li>
+	<li><a href="lucidi/E2-file.pdf">E2 - Metodi di accesso (file)</a></li>
+	<li><a href="lucidi/E3-indici.pdf">E3 - Metodi di accesso (indici)</a></li>
+	<li><a href="lucidi/E4-hash.pdf">E4 - Metodi di accesso (hash)</a></li>
+	<li><a href="lucidi/E5-transaz.pdf">E5 - Sistemi transazionali</a></li>
+	<li><a href="lucidi/E6-concorre.pdf">E6 - Controllo di concorrenza</a></li>
+	</ul>
+<li><b>F - Programmazione DB</b></li>
+	<ul>
+	<li><a href="lucidi/F1-vincoli-procedure-trigger.pdf">F1 - Vincoli, procedure e regole attive in SQL</a></li>
+	<li><a href="lucidi/F1es.pdf">F1es - Esercizi su vincoli, procedure e regole attive in SQL</a></li>
+	<li><a href="lucidi/F2-jdbc.pdf">F2 - jdbc</a> <a href="lucidi/F2.zip">code</a></li>
+	</ul>
+<li><b>Testi Esercizi Risolti in Aula</b></li>
+    	<ul>
+    	<li><a href="lucidi/esercizi/_es1AgenziaViaggi.pdf">Esercizio - Agenzia Viaggi</a></li>
+    	<li><a href="lucidi/esercizi/_es2Ricerca.pdf">Esercizio - Progetti di Ricerca</a></li>
+    	<li><a href="lucidi/esercizi/_es3Zoo.pdf">Esercizio - Zoo</a></li>
+    	<li><a href="lucidi/esercizi/_es4SaleCinematografiche-S.pdf">Esercizio - Sale Cinematografiche (risolto)</a></li>
+    	<li><a href="lucidi/esercizi/_es5GalleriaArte-S.pdf">Esercizio - Galleria d'arte (risolto)</a></li>
+    	<li><a href="lucidi/esercizi/_esAlgebraVari.pdf">Esercizi vari Algebra Relazionale</a></li>
+    	</ul>
+<li><b>Script Creazione Database Utilizzati in Laboratorio</b></li>
+    	<ul>
+    	<li><a href="lucidi/esercizi/dvd.sql">Database DVD</a></li>
+    	<li><a href="lucidi/esercizi/esami.sql">Database Esami</a></li>
+    	<li><a href="lucidi/esercizi/mobili.sql">Database Mobili</a></li>
+    	<li><a href="lucidi/esercizi/ordini.sql">Database Ordini</a></li>
+    	</ul>
+<li><b>Curiosità e storia</b></li>
+	<ul>
+	<li><a href="lucidi/SQL History.pdf">Curiosità sulle origini degli RDBMS e di SQL</a></li>
+	<li><a href="lucidi/DB_History.pdf">Data Management: Past, Present, and Future</a></li>
+  </ul>
+  
+</ul>
+<ul>
+	<li>Materiale didattico e informazioni anni precedenti: <a href="bd2013.asp">link</a></li>
+</ul>
+
+
+	<h3>Testi e soluzioni dei compiti passati</h3>
+<ul>
+
+<li>Prova scritta 22 gennaio 2015</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD150122R.pdf">Compito risolto</a></li>
+</ul>
+	
+<li>Prova scritta 9 settembre 2014</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD140909R.pdf">Compito risolto</a></li>
+</ul>
+
+<li>Prova scritta 24 luglio 2014</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD140724R.pdf">Compito risolto</a></li>
+</ul>
+	
+<li>Prova scritta 10 luglio 2014</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD140710R.pdf">Compito risolto</a></li>
+</ul>
+
+<li>Prova scritta 19 giugno 2014</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD140619R.pdf">Compito risolto</a></li>
+</ul>
+	
+<li>Prova intermedia 30 aprile 2014</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD140430R.pdf">Compito risolto</a></li>
+</ul>
+
+<li>Prova scritta 23 gennaio 2014</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD140123R.pdf">Compito risolto</a></li>
+</ul>
+
+<!--<li>Prova intermedia 29 aprile 2013</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD130429R.pdf">Compito risolto</a></li>
+</ul>
+
+<li>Prova scritta 13 febbraio 2013</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD130213R.pdf">Compito risolto</a></li>
+</ul>
+	
+<li>Prova scritta 6 settembre 2012</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD120906R.pdf">Compito risolto</a></li>
+</ul>
+    
+<li>Prova scritta 12 luglio 2012</li>
+<ul>
+<li>Prova scritta: <a href="lucidi/Compiti/BD120712R.pdf">Compito risolto</a></li>
+</ul>
+    
+-->
+    
+
+</ul>
+
+
+<h3>Progetto A.A. 2013/14 </h3>
+    <ul>
+    	<li>Argomento proposto</li>
+        <ul>
+            <!--L'argomento della tesina verrà comunicato durante il corso (aprile) e qui pubblicato.-->
+        	<li><a href="lucidi/ProgettoBD1314.pdf">Testo e indicazioni generali</a></li>
+        </ul>
+        <li>Esempi di progetti di anni passati</li>
+        <ul>
+        <li><a href="lucidi/Tesine/Tesina0405-MontecchiMalavasi.pdf">Esempio 1</a></li>
+        <li><a href="lucidi/Tesine/Tesina0405-Acerbi.pdf">Esempio 2</a></li>
+        </ul>
+    </ul>
+    
+    <ul>
+
+    </ul>
+    
+
+                       
+
+
+
+			
+			
+			<a name="esami">
+          <h2>Esami</h2>    
+          </a> 
+		  <h3> Appelli d'esame</h3>
+		  <!--<ul>
+		      <li>Prova in itinere: 27 aprile 2011, ore 14.00, aula II Matematica</li>
+		  </ul>-->
+           <ul>
+              <li>Appelli scritti:</li>
+              <ul>
+			<li><b>22 gennaio 2015</b>, ore 10.00, aula XII Matematica</li>
+			<li><b>12 febbraio 2015</b>, ore 10.00, aula XII Matematica</li>
+            <!--<li><b>19 giugno 2014</b>, ore 10.00, aula II Matematica</li>
+            <li><b>10 luglio 2014</b>, ore 10.00, aula V Matematica</li>
+            <li><b>24 luglio 2014</b>, ore 10.00, aula II Matematica</li>
+            <li><b>9 settembre 2014</b>, ore 10.00, aula V Matematica</li>-->
+             </ul>
+        <li>E' possibile visualizzare ed iscriversi agli appelli di esame tramite il sito <b>ESSE3</b>. </li>
+
+          </ul>
+
+		  
+	  <h3> Risultati</h3>
+
+<ul>
+	<li><a href="lucidi/risultati/VotiBasi150122.pdf">Risultati prova scritta 22 gennaio 2015 e progetti al 22 gennaio 2015</a><br></li>
+	<li><a href="lucidi/risultati/VotiBasi140909.pdf">Risultati prova scritta 9 settembre 2014 e progetti al 9 settembre 2014</a><br></li>
+	<li><a href="lucidi/risultati/VotiBasi140724.pdf">Risultati prova scritta 24 luglio 2014 e progetti al 24 luglio 2014</a><br></li>
+	<li><a href="lucidi/risultati/VotiBasi140710.pdf">Risultati prova scritta 10 luglio 2014 e progetti al 10 luglio 2014</a><br></li>
+	<li><a href="lucidi/risultati/VotiBasi140619.pdf">Risultati prova scritta 19 giugno 2014 e progetti al 19 giugno 2014</a><br></li>
+	<li><a href="lucidi/risultati/VotiBasi140430.pdf">Risultati prova intermedia 30 aprile 2014</a><br></li>
+    <!--
+	<li><a href="lucidi/risultati/VotiBasi140213.pdf">Risultati prova scritta e progetti al 13 febbraio 2014</a><br></li>
+	<li><a href="lucidi/risultati/VotiBasi130910.pdf">Risultati progetti al 10 settembre 2013</a><br></li>
+    <li><a href="lucidi/risultati/VotiBasi120906.pdf">Risultati prova scritta 6 settembre 2012 e progetti al 3 settembre 2012</a><br></li>-->
+
+   
+    <!--
+    I risultati della correzione dei progetti consegnati <b>entro martedì 23 luglio</b> verranno
+	pubblicati insieme ai risultati della prova scritta del 25 luglio.<br>-->
+	<br>
+	<li> <b>AVVISO:</b>
+	I risultati della correzione dei progetti consegnati <b>entro lunedì 8 settembre</b>
+	verranno pubblicati insieme ai risultati della prova scritta del 9 settembre.<br>
+	
+	I progetti consegnati <b>successivamente a martedì 9 settembre</b>
+	verranno corretti in concomitanza con gli appelli di gennaio 2015.<br>
+    </li>
+	<br>
+	<li><b>NOTA:</b> per ragioni di chiusura appello su ESSE3, chi avesse superato uno scritto di giugno / luglio senza consegnare il progetto riceverà  una mail che comunica il ritiro dall'appello. Il voto resta comunque valido e sarà possibile consegnare il progetto successivamente, l'operazione è necessaria per poter registrare gli altri voti finali sufficienti.
+    </li>
+
+    
+<!--<li><a href="lucidi/risultati/VotiFinali090721.pdf">Risultati finali al 21 luglio 2009</a><br></li>-->
+</ul>
+
+
+            <a name="tesi">
+            <h2> Tesi di Laurea e Tirocini Aziendali</h2>
+            </a>
+
+    <ul><li>
+    Sono disponibili numerose <b>tesi triennali e specialistiche</b> (di ricerca e applicative) e <b>tirocini aziendali</b> su diversi argomenti relativi alla gestione di informazioni e alle basi di dati. </li>
+    <li>E' possibile consultare una breve <b>descrizione di alcune delle proposte</b> e una rassegna delle <b>tesi realizzate in passato</b> da <a href="http://www.isgroup.unimo.it/theses" target="_blank">questa pagina</a>.
+	      <li>Per maggiori informazioni su tutte le proposte correnti, <a href="mailto:riccardo.martoglia@unimo.it"> contattare il Prof. Riccardo Martoglia</a>.</li>
+  <!--<li>Per una breve panoramica della nostra attività di ricerca è disponibile una <b>presentazione flash</b>:</li>
+</ul>
+
+
+          
+          <div align="center"> <img src="/images/showFlash.jpg" style="CURSOR: hand" onclick="javascript:presentation('SynTech08')" alt="Show Presentation" name="Show Presentation" border="0"> </div>-->
+          <br>
+          <br>
+
+			
+            
+             
+            <!-- - - - - - - - - - - - - - - - NON MODIFICARE LA PARTE QUI SOTTO  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
+              
+         </div>
+        </div>
+        <div class='box_bordoverde'></div>
+       </div>
+      
+    </div>
+
+</body>
+</html>
