@@ -1,6 +1,7 @@
-./getsite.py `cat site.txt`
+localfolder=`pwd`
+$localfolder/getsite.py `cat site.txt`
 
-ret=`./htmldiff.py`
+ret=`${localfolder}/htmldiff.py`
 
 echo $ret
 
@@ -11,5 +12,5 @@ then
 else
 	echo changed
 	notify-send changed
-	date >> win.list 
+	date >> $localfolder/win.list 
 fi
