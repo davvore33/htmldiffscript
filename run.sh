@@ -1,15 +1,15 @@
-./htmldiffscript.py `cat sito.txt`
+./getsite.py `cat site.txt`
 
-ciao=`./htmldiff.py`
+ret=`./htmldiff.py`
 
-echo $ciao
+echo $ret
 
-if [ $ciao == 0 ]
+if [ $ret == 0 ]
 
 then
-	echo sito invariato
+	echo unvariant
 else
-	echo sito cambiato
-	notify-send sito cambiato
+	echo changed
+	notify-send changed
 	date >> win.list 
 fi

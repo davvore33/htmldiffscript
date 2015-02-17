@@ -1,20 +1,20 @@
 #!/usr/bin/python2
 
 import os
+localfolder = os.getcwd()
+readinglist = open(localfolder+'/list.txt')
 
-fscanf = open('lista.txt')
+#I'm writing the list and I'll push every name in a string matrix
+list = readinglist.read()
+listS = str.splitlines(list)
+readinglist.close()
+os.remove(localfolder+'/list.txt')
 
-#leggo la lista dei file e genero una stringa per ogni nome
-lista = fscanf.read()
-listaS = str.splitlines(lista)
-fscanf.close()
-os.remove('lista.txt')
+writinglist = open(localfolder+'/list.txt','a')
+writinglist.write(listS[1]+"\n")
+writinglist.close()
 
-fscanf = open('lista.txt','a')
-fscanf.write(listaS[1]+"\n")
-fscanf.close()
-
-ret = os.system("diff "+listaS[0]+" "+listaS[1])
-os.remove(listaS[0])
+ret = os.system("diff "+listS[0]+" "+listS[1])
+os.remove(listS[0])
 
 print ret
