@@ -1,5 +1,11 @@
 localfolder=`pwd`
-$localfolder/getsite.py `cat site.txt`
+
+if [ $1 == ""]
+then
+	$localfolder/getsite.py `cat site.txt`
+else
+	$localfolder/getsite.py $1
+fi
 
 ret=`${localfolder}/htmldiff.py`
 

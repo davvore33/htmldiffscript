@@ -27,6 +27,6 @@ try:
 except:
 	print "there is no site"
 try:
-	os.remove(localfolder+'/win.txt')
+	os.remove(localfolder+'/win.list')
 except:
 	print "there is no win"
