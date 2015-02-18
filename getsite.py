@@ -14,8 +14,8 @@ filename=localfolder+"/index"+date+".html"
 print("url= "+url)
 print("istant "+date)
 
-fprintf = open(localfolder+'/list.txt','a')
-fprintf.write(filename+"\n")
+writinglist = open(localfolder+'/list.txt','a')
+writinglist.write(filename+"\n")
 urllib.urlretrieve(url, filename=filename) #finally catching the html file, nomined "filename"
 
-fprintf.close()
+writinglist.close()
